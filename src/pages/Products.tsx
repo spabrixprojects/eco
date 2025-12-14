@@ -135,16 +135,7 @@ const Products = () => {
                 ))}
               </select>
 
-              <select
-                value={selectedBrand}
-                onChange={(e) => updateFilter('brand', e.target.value)}
-                className="h-12 px-4 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
-              >
-                <option value="">All Brands</option>
-                {brands.map((brand) => (
-                  <option key={brand} value={brand}>{brand}</option>
-                ))}
-              </select>
+            
 
               <select
                 value={selectedUsage}
